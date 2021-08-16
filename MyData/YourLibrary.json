@@ -1,0 +1,165 @@
+{
+  "tracks": [
+    {
+      "artist": "ICO",
+      "album": "ICO〜霧の中の旋律〜",
+      "track": "Castle in the Mist",
+      "uri": "spotify:track:3NqHQ4V2U4wQuWlByWfa1r"
+    },
+    {
+      "artist": "Video Games Live",
+      "album": "Level 3",
+      "track": "World of Warcraft® - \"Invincible\"",
+      "uri": "spotify:track:3NgsUTaDrpucwbONS6VIU8"
+    },
+    {
+      "artist": "Korn",
+      "album": "Untitled",
+      "track": "Evolution",
+      "uri": "spotify:track:3iLCPsQR9oBdJU05N1H1EA"
+    },
+    {
+      "artist": "Zakk Wylde",
+      "album": "Book Of Shadows II",
+      "track": "Lost Prayer",
+      "uri": "spotify:track:4nFZn2UqltykzjMu0F4z1P"
+    },
+    {
+      "artist": "Muse",
+      "album": "Black Holes and Revelations",
+      "track": "Knights of Cydonia",
+      "uri": "spotify:track:7ouMYWpwJ422jRcDASZB7P"
+    },
+    {
+      "artist": "Marcin Przybyłowicz",
+      "album": "Wolven Storm",
+      "track": "Wolven Storm - English",
+      "uri": "spotify:track:0zCqrZ8SEdkzSmhFlRTHlQ"
+    },
+    {
+      "artist": "Blind Guardian",
+      "album": "Somewhere Far Beyond (Remastered 2007)",
+      "track": "The Bard's Song - In the Forest - Remastered 2007",
+      "uri": "spotify:track:7xPGvZaG9W7UOrCgEwbONe"
+    }
+  ],
+  "albums": [
+    {
+      "artist": "Lena Raine",
+      "album": "Celeste (Original Soundtrack)",
+      "uri": "spotify:album:5OZHQ7KG8k04IOkF50fACO"
+    },
+    {
+      "artist": "Insomnium",
+      "album": "Shadows of the Dying Sun",
+      "uri": "spotify:album:0iYAnDAQLAOXIl5bUAfYG3"
+    },
+    {
+      "artist": "Xavier Dang",
+      "album": "Neon Surfing",
+      "uri": "spotify:album:5dCCSVv1lQY8MkaAknHofn"
+    },
+    {
+      "artist": "Fonka & La Kok'",
+      "album": "Ascension",
+      "uri": "spotify:album:3UAYRgwDg69mXYHAcE4d5p"
+    },
+    {
+      "artist": "Christopher Larkin",
+      "album": "Hollow Knight (Original Soundtrack)",
+      "uri": "spotify:album:4XgGOMRY7H4hl6OQi5wb2Z"
+    }
+  ],
+  "shows": [
+  ],
+  "episodes": [
+  ],
+  "bannedTracks": [
+  ],
+  "artists": [
+    {
+      "name": "Agents Of Time",
+      "uri": "spotify:artist:6Jbyd4qzEtbFtswZP1o6Ht"
+    },
+    {
+      "name": "Alt236",
+      "uri": "spotify:artist:3061h2mzCPadoMhIsLTBGp"
+    },
+    {
+      "name": "Avatar",
+      "uri": "spotify:artist:4jpaXieuls7LVzG1uma5Rs"
+    },
+    {
+      "name": "Eminem",
+      "uri": "spotify:artist:7dGJo4pcD2V6oG8kP0tJRR"
+    },
+    {
+      "name": "Fonka & La Kok'",
+      "uri": "spotify:artist:0Sbir1RExgTFpTTQYHaMAe"
+    },
+    {
+      "name": "Hocus Pocus",
+      "uri": "spotify:artist:1D5DI6S5zIiGPBf1IAuAJh"
+    },
+    {
+      "name": "Hugo TSR",
+      "uri": "spotify:artist:4wuKH89QtnyauwNpBMp5RP"
+    },
+    {
+      "name": "Iam",
+      "uri": "spotify:artist:56Q6weEROZ1RsVrTak8Bm7"
+    },
+    {
+      "name": "Imagine Dragons",
+      "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+    },
+    {
+      "name": "In Uchronia",
+      "uri": "spotify:artist:2uKfU4rvjDgVhPEZBUtnkS"
+    },
+    {
+      "name": "Insomnium",
+      "uri": "spotify:artist:3uIgLG971oRM5fe6v8lvQS"
+    },
+    {
+      "name": "Iron Maiden",
+      "uri": "spotify:artist:6mdiAmATAx73kdxrNrnlao"
+    },
+    {
+      "name": "MC Solaar",
+      "uri": "spotify:artist:3nU8TSIICYDbUqRpJISTRE"
+    },
+    {
+      "name": "Metallica",
+      "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+    },
+    {
+      "name": "Oxmo Puccino",
+      "uri": "spotify:artist:44bvfFf9VeGwVjK0QDqQ7O"
+    },
+    {
+      "name": "Pen of Chaos Et Le Naheulband",
+      "uri": "spotify:artist:3Ev83WpI5binmCKld1PT6s"
+    },
+    {
+      "name": "Radiohead",
+      "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+    },
+    {
+      "name": "Rammstein",
+      "uri": "spotify:artist:6wWVKhxIU2cEi0K81v7HvP"
+    },
+    {
+      "name": "System Of A Down",
+      "uri": "spotify:artist:5eAWCfyUhZtHHtBdNk56l1"
+    },
+    {
+      "name": "Xavier Dang",
+      "uri": "spotify:artist:0YmolFQDFIoVNgOOrcHgiG"
+    }
+  ],
+  "bannedArtists": [
+  ],
+  "other": [
+  ]
+}
