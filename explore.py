@@ -62,8 +62,19 @@ df_grouped["trackId"] = df_grouped.apply(lambda x: spotify.get_track_id(x["artis
 print("--- %s seconds ---" % (time.time() - start_time))
 
 print("features")
+# add  a list of features in the series "features"
 df_grouped["features"] = df_grouped["trackId"].apply(lambda x: spotify.get_track_features(x))
+list_features = df_grouped["features"] .tolist()
 print("--- %s seconds ---" % (time.time() - start_time))
+
+# create a dataframe with all features
+df_features = pd.DataFrame(list_features, columns = ["duration", "danceability", "acousticness", "energy", "instrumentalness", 
+                      "liveness", "valence", "loudness", "speechiness", "tempo", "key", "time_signature"])
+
+df_grouped = df_grouped.drop(["features"], axis=1)
+# add the features to the main dataframe
+df_grouped = pd.concat([df_grouped, df_features], axis=1)
+
 
 # save the dataframe
 df_grouped.to_csv('MyData/output/all_tracks.csv', index = False)
