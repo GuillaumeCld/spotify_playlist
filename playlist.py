@@ -34,28 +34,32 @@ token_playlist= util.prompt_for_user_token(username,scope_playlist,client_id,cli
 sp_playlist = spotipy.Spotify(auth=token_playlist)
 
 
-cluster_0 = pd.read_csv("MyData/output/cluster0.csv")
-cluster_1 = pd.read_csv("MyData/output/cluster1.csv")
-cluster_2 = pd.read_csv("MyData/output/cluster2.csv")
-cluster_3 = pd.read_csv("MyData/output/cluster3.csv")
-ids_0 = cluster_0['trackId'].tolist()
-ids_1 = cluster_1['trackId'].tolist()
-ids_2 = cluster_2['trackId'].tolist()
-ids_3 = cluster_3['trackId'].tolist()
-ids_track = [ids_0, ids_1, ids_2, ids_3]
 
-ids_list = []
+def add_playlist(tracksId, name):
+    tracks = tracksId.tolist()
+    sp_playlist.user_playlist_create(username, name)
+    for playlist in sp_playlist.user_playlists(username)['items']:
+        if playlist['name'] == name:
+            sp_playlist.user_playlist_add_tracks(username, playlist['id'], tracks)
 
-metal1 = sp_playlist.user_playlist_create(username,"new try Metal1")
-metal2 = sp_playlist.user_playlist_create(username,"new try Metal2")
-metal3 = sp_playlist.user_playlist_create(username,"new try Metal3")
-metal4 = sp_playlist.user_playlist_create(username,"new try Metal4")
+# cluster_0 = pd.read_csv("MyData/output/cluster0.csv")
+# cluster_1 = pd.read_csv("MyData/output/cluster1.csv")
 
-for playlist in sp_playlist.user_playlists(username)['items']:
-    ids_list.append(playlist['id'])
+# ids_0 = cluster_0['trackId'].tolist()
+# ids_1 = cluster_1['trackId'].tolist()
+
+# ids_track = [ids_0, ids_1]
+
+# ids_list = []
+
+# metal1 = sp_playlist.user_playlist_create(username,"new try Metal1")
+# metal2 = sp_playlist.user_playlist_create(username,"new try Metal2")
+
+
+# for playlist in sp_playlist.user_playlists(username)['items']:
+#     ids_list.append(playlist['id'])
     
 
 
-for tracks, ids in zip(ids_track, ids_list):
-    print()
-    sp_playlist.user_playlist_add_tracks(username, ids, tracks)
+# for tracks, ids in zip(ids_track, ids_list):
+#     sp_playlist.user_playlist_add_tracks(username, ids, tracks)
