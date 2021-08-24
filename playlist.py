@@ -9,10 +9,11 @@ Created on Fri Aug 20 17:26:07 2021
 import spotipy
 from spotipy import util
 import pandas as pd
+import os
 
 
-client_id='7ac8a058da944315986522741f8b8955'
-client_secret='427d6ce4a6604390a0011cd55316d045'
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 redirect_uri='http://localhost:9000'
 
 username = 'sohribo'
@@ -22,15 +23,15 @@ scope_playing = 'user-read-currently-playing'
 
 
 #Credentials to access the actual song played
-token_actual = util.prompt_for_user_token(username,scope_playing,client_id,client_secret,redirect_uri) 
+token_actual = util.prompt_for_user_token(username,scope_playing,CLIENT_ID,CLIENT_SECRET,redirect_uri) 
 sp_actual = spotipy.Spotify(auth=token_actual)
 
 #Credentiasl to acces the library music 
-token_user= util.prompt_for_user_token(username,scope_user,client_id,client_secret,redirect_uri) 
+token_user= util.prompt_for_user_token(username,scope_user,CLIENT_ID,CLIENT_SECRET,redirect_uri) 
 sp_user = spotipy.Spotify(auth=token_user)
 
 #Credentiasl to acces the Playlists Music
-token_playlist= util.prompt_for_user_token(username,scope_playlist,client_id,client_secret,redirect_uri) 
+token_playlist= util.prompt_for_user_token(username,scope_playlist,CLIENT_ID,CLIENT_SECRET,redirect_uri) 
 sp_playlist = spotipy.Spotify(auth=token_playlist)
 
 

@@ -14,20 +14,6 @@ import numpy as np
 from sklearn.decomposition import PCA
 
 def string_to_list(txt):
-    """
-    
-
-    Parameters
-    ----------
-    txt : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    TYPE
-        DESCRIPTION.
-
-    """
     return txt[1:-1].replace("'", "").split(", ")
 
 

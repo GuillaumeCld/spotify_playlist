@@ -7,12 +7,14 @@ Created on Mon Aug 16 18:41:46 2021
 """
 import spotipy
 import spotipy.util as util
+import os
+
 
 username = "sohribo"
 scope = "user-top-read user-read-currently-playing "
 redirect_uri = "http://localhost:9000"
-CLIENT_ID = "7ac8a058da944315986522741f8b8955"
-CLIENT_SECRET = "427d6ce4a6604390a0011cd55316d045"
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 token = util.prompt_for_user_token(username, scope, CLIENT_ID, CLIENT_SECRET, redirect_uri)
 
 
