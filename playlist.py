@@ -9,13 +9,14 @@ Created on Fri Aug 20 17:26:07 2021
 import spotipy
 from spotipy import util
 import pandas as pd
+import configparser
+cfg = configparser.ConfigParser()
+cfg.read(".config.cfg")
 
-
-client_id='7ac8a058da944315986522741f8b8955'
-client_secret='427d6ce4a6604390a0011cd55316d045'
+client_id = cfg.get('KEYS', 'client_id', raw='')
+client_secret = cfg.get('KEYS', 'client_secret', raw='')
+username =  cfg.get('USER', 'username', raw='')
 redirect_uri='http://localhost:9000'
-
-username = 'sohribo'
 scope_playlist = 'playlist-modify-public'
 scope_user = 'user-library-modify'
 scope_playing = 'user-read-currently-playing'

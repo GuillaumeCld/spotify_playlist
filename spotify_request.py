@@ -7,13 +7,17 @@ Created on Mon Aug 16 18:41:46 2021
 """
 import spotipy
 import spotipy.util as util
+import configparser
+cfg = configparser.ConfigParser()
+cfg.read(".config.cfg")
 
-username = "sohribo"
+client_id = cfg.get('KEYS', 'client_id', raw='')
+client_secret = cfg.get('KEYS', 'client_secret', raw='')
+username =  cfg.get('USER', 'username', raw='')
 scope = "user-top-read user-read-currently-playing "
 redirect_uri = "http://localhost:9000"
-CLIENT_ID = "7ac8a058da944315986522741f8b8955"
-CLIENT_SECRET = "427d6ce4a6604390a0011cd55316d045"
-token = util.prompt_for_user_token(username, scope, CLIENT_ID, CLIENT_SECRET, redirect_uri)
+
+token = util.prompt_for_user_token(username, scope, client_id, client_secret, redirect_uri)
 
 
 sp = spotipy.Spotify(auth = token)
