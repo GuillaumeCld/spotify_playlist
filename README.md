@@ -32,7 +32,7 @@ The project is divided into two parts, data analysis and the creation of the pla
 
 * Playlist creation
 
-###Data
+### Data
 The listening history comes in a json, it has to be requested on your Spotify profile.
 Song's features are found through Spotify API with spotipy.
 To use the code you have to fill the file .config.cfg with your API key.
